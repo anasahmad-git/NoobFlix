@@ -379,11 +379,11 @@ function WatchedMovie({ movie, onDeleteWatched }) {
       <div>
         <p>
           <span>⭐️</span>
-          <span>{movie.imdbRating.toFixed(2)}</span>
+          <span>{movie.imdbRating ? movie.imdbRating.toFixed(2) : "N/A"}</span>
         </p>
         <p>
           <span>🌟</span>
-          <span>{movie.userRating.toFixed(2)}</span>
+          <span>{movie.imdbRating ? movie.imdbRating.toFixed(2) : "N/A"}</span>
         </p>
         <p>
           <span>⏳</span>
